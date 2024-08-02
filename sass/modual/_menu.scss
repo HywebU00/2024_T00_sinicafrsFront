@@ -1,0 +1,353 @@
+//submenu animation
+@keyframes showMenu {
+  0% {
+    left: 20px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+// pc版 條列menu
+.menu {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 50;
+  clear: both;
+  flex: 1 1 100%;
+  flex-basis: 100%;
+  background-color: $primaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: $primaryColor;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    & > ul {
+      margin: 0;
+      flex: 0 0 auto;
+    }
+  }
+
+  @include screen('mobile') {
+    display: none;
+  }
+
+  // 預設選單 ul
+  > ul {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    // 第一層選單樣式
+    > li {
+      flex: 0 1 auto;
+      position: relative;
+
+      > a {
+        display: flex;
+        align-items: center;
+        padding: 1em 2em;
+        font-size: 1.25em;
+        white-space: nowrap;
+        color: #fff;
+        box-sizing: border-box;
+        letter-spacing: 0.05em;
+        transition: 0.5s;
+
+        &:focus-visible {
+          color: $linkColor;
+        }
+      }
+
+      &.hasChild {
+        > a {
+          // &:after {
+          //   content: '';
+          //   width: 4px;
+          //   height: 4px;
+          //   display: inline-block;
+          //   margin-left: 0.5em;
+          //   vertical-align: middle;
+          //   border: 2px solid lighten($color-word, 40);
+          //   transform: rotate(135deg);
+          //   border-bottom: none;
+          //   border-left: none;
+          //   margin-bottom: 0.2em;
+          // }
+        }
+      }
+      &.active,
+      &:hover {
+        > a {
+          color: $linkColor;
+          &:after {
+            border: 2px solid $aHover;
+            border-bottom: none;
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      position: relative;
+
+      a {
+        display: block;
+        text-decoration: none;
+      }
+
+      ul {
+        display: none;
+        overflow: visible;
+        width: 99%;
+        background-color: #143935;
+        padding: 0;
+        z-index: 999999;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        list-style: none;
+        text-align: left;
+        // animation: showMenu 0.3s $cubic;
+        font-size: 1.063em;
+
+        // 第二層選單樣式
+        li {
+          float: none;
+
+          a {
+            padding: 0.6em 1.2em;
+            color: #fff;
+            font-weight: bold;
+
+            &:hover,
+            &:focus {
+              background: $primaryColor;
+            }
+          }
+        }
+
+        li.hasChild {
+          > ul {
+            z-index: 999;
+          }
+
+          > a {
+            padding-right: 2em;
+
+            &:hover,
+            &:focus-visible {
+              background: $primaryColor;
+            }
+
+            &:after {
+              content: '';
+              position: absolute;
+              right: 10px;
+              top: 1.3em;
+              width: 6px;
+              height: 6px;
+              border: 2px solid #fff;
+              transform: rotate(45deg);
+              border-bottom: none;
+              border-left: none;
+            }
+          }
+        }
+
+        ul {
+          top: 0;
+          left: 100%;
+          animation: none;
+          font-size: 1em;
+        }
+      }
+      &.active {
+        & > ul {
+          opacity: 1;
+          display: block;
+        }
+      }
+      &.leftSlider {
+        ul ul {
+          left: auto;
+          right: 100%;
+        }
+      }
+    }
+  }
+  // 會員登入
+  .memberlogin {
+    flex: 0 0 auto;
+    margin: 0;
+    height: 64px;
+    .loginbtn,
+    .memberarea_btn {
+      a {
+        display: block;
+        background-color: #143935;
+        background-image: url('../images/member_icon01.png');
+        background-position: 1em center;
+        background-repeat: no-repeat;
+        padding: 1em 1em 1em 2.7em;
+        color: #fff;
+        height: 64px;
+        font-size: 1.125em;
+      }
+    }
+
+    // 登入後
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: none;
+      li {
+        a {
+          display: block;
+          background-color: $color-dark;
+
+          font-weight: bold;
+          color: #fff;
+          padding: 0.6em 1.2em;
+          &:hover {
+            background-color: $primaryColor;
+          }
+        }
+      }
+    }
+
+    //未登入前
+    .Userlogin_block {
+      position: absolute;
+      background-color: $color-dark;
+      width: 280px;
+      padding: 1em;
+      display: none;
+      &.openblock {
+        display: block;
+      }
+      .flex-form {
+        margin: 0;
+        .form_grp {
+          border-bottom: none;
+          padding: 0;
+          .form_title {
+            flex: 0 0 50px;
+            max-width: 50px;
+            color: #fff;
+          }
+          .form_content {
+            flex: 1 1 auto;
+            flex-basis: calc(100% - 50px);
+            max-width: calc(100% - 50px);
+          }
+        }
+        .btn_grp {
+          input {
+            background-color: $lightColor;
+            border: 1px solid $lightColor;
+
+            min-width: auto;
+          }
+          a {
+            display: inline-block;
+            color: #fff;
+            padding: 0 0.5em;
+            position: relative;
+            &:after {
+              content: '';
+              width: 1px;
+              height: 15px;
+              background-color: #fff;
+              position: absolute;
+              right: 0;
+              top: 5px;
+            }
+            &:last-child {
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menuArrowDown,
+.menuArrowUp {
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: fixed;
+  bottom: 5px;
+  z-index: 9999999;
+  margin: 0;
+  // opacity: 0;
+  transition: all 0.3s linear;
+
+  // &.active {
+  //   opacity: 1;
+  // }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 6px;
+    display: block;
+    background: #fff;
+  }
+}
+
+.menuArrowDown {
+  &::before {
+    transform: rotate(45deg);
+    left: 4px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    right: 4px;
+  }
+}
+
+.menuArrowUp {
+  &::before {
+    transform: rotate(45deg);
+    right: 4px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    left: 4px;
+  }
+}

@@ -1,0 +1,32 @@
+/* -------------------------------不需要列印的區塊，請放置於這----//*/
+header,
+.fatfooter,
+footer,
+.accesskey,
+.submenu,
+.breadcrumb,
+.function_panel,
+h2.title,
+.searchgroup,
+.pagination,
+.searchresults_block .narrowquery_btn,
+.searchresults_block .leftblock,
+.searchresults_block .rightblock .resultlist_group .selectall {
+  display: none;
+}
+/* -------------------------------各別顯示設定----//*/
+body {
+  background: transparent;
+  float: none;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 !important;
+  margin: 0;
+}
+.innercontent {
+  box-shadow: none;
+  padding: 0;
+}

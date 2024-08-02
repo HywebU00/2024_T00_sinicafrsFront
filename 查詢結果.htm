@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta name="robots" content="noindex" />
+  <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>臺灣史檔案資源系統</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- slick css-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <!-- WOW動畫-->
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- 字型 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Ysabeau+Infant:wght@600&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#aC" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header full">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <div class="headergroup">
+          <h1 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0s">
+            <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+          </h1>
+          <!-- navigation Start -->
+          <nav class="navigation" role="navigation" aria-label="Site">
+            <!-- 新增div navlist -->
+            <div class="navlist">
+              <ul>
+                <li><a href="#">中央研究院臺灣史研究所</a></li>
+                <li><a href="#">中研院臺史所檔案館</a></li>
+                <li><a href="#">常見問答</a></li>
+                <li><a href="#">聯絡我們</a></li>
+              </ul>
+            </div>
+            <div class="member_name"><span>王小明，您好 </span><button type="button" class="btn btn-black">登出</button></div>
+          </nav>
+          <!-- navigation End -->
+        </div>
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <nav class="menu" role="navigation" aria-label="Header的導航列">
+          <ul>
+            <li>
+              <a href="#">館藏查詢</a>
+            </li>
+            <li><a href="#">全宗瀏覽</a></li>
+            <li>
+              <a href="#">系統簡介</a>
+            </li>
+          </ul>
+          <div class="memberlogin">
+            <div class="memberarea_btn"><a href="#">使用者專區</a></div>
+            <ul>
+              <li>
+                <a href="#">查詢歷史</a>
+              </li>
+              <li>
+                <a href="#">個人資料維護</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- menu End -->
+      </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="aC" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#ac" id="ac" accesskey="C" title="主要內容區">:::</a>
+      <div class="container">
+        <!-- 左側 -->
+        <div class="left_block hidden">
+        </div>
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li>藏品查詢</li>
+            </ul>
+          </div>
+          <!-- function_panel start -->
+          <div class="function_panel">
+            <!-- function功能區塊 -->
+            <div class="function">
+              <ul>
+                <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
+                <!-- <li class="print"><a href="#">友善列印</a></li>
+                <li class="forward"><a href="#">轉寄友人</a></li> -->
+              </ul>
+            </div>
+          </div>
+          <!-- function_panel end -->
+          <!-- h2節點 -->
+          <h2 class="title"><span>查詢結果</span></h2>
+
+          <!-- ap Start -->
+          <section class="ap">
+            <div class="innercontent">
+              <!-- 檢索查詢start -->
+              <div class="searchgroup narrowdown">
+                <div class="flex-form form_grid">
+                  <div class="form_grp">
+                    <div class="form_content formflex">
+                      <label for="username">縮小範圍查詢：</label>
+                      <input name="phone" id="phone" type="text" title="請輸入關鍵" placeholder="請輸入關鍵" />
+                      <button type="button" class="btn-gold">查詢</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 檢索查詢end -->
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                        </select>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <!-- <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label> -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Pagination end-->
+              <!-- 檢索結果start -->
+              <div class="searchresults_block">
+                <!-- 縮限查詢範圍按鈕 -->
+                <div class="narrowquery_btn"><a href="javascript:;">縮限查詢範圍</a></div>
+                <div class="leftblock">
+                  <!-- 1 -->
+                  <div class="sortlist">
+                    <div class="sort_title">您查詢的條件為</div>
+                    <div class="content">
+                      <!-- <div class="sectitle">關鍵字</div> -->
+                      <p>不限欄位=臺灣</p>
+                      <!--  <div class="sectitle">資料類型</div>
+                      <div class="condition">臺灣新民報<button type="button">關閉</button></div>
+                      <div class="sectitle">書刊名</div>
+                      <div class="condition">臺灣新民報1938年1月<button type="button">關閉</button></div> -->
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="sortlist">
+                    <div class="sort_title">所屬全宗後分類</div>
+                    <ul>
+                      <li><a href="#">張麗俊文書<span class="num">(301)</span></a></li>
+                      <li><a href="#">新竹新埔蔡家文書<span class="num">(209)</span></a></li>
+                      <li><a href="#">黃交黎文書<span class="num">(115)</span></a></li>
+                      <li><a href="#">中部地區土地文書<span class="num">(34)</span></a></li>
+                      <li><a href="#">教育文書<span class="num">(6)</span></a></li>
+                      <li><a href="#">郭秋才文書<span class="num">(5)</span></a></li>
+                      <li><a href="#">高慈美文書<span class="num">(4)</span></a></li>
+                      <li><a href="#">劉傳來文書<span class="num">(3)</span></a></li>
+                      <li><a href="#">離島地區土地文書<span class="num">(2)</span></a></li>
+                      <li><a href="#">岸裡社潘家文書<span class="num">(2)</span></a></li>
+                      <li><a href="#">張麗俊文書<span class="num">(301)</span></a></li>
+                      <li><a href="#">新竹新埔蔡家文書<span class="num">(209)</span></a></li>
+                      <li><a href="#">黃交黎文書<span class="num">(115)</span></a></li>
+                      <li><a href="#">中部地區土地文書<span class="num">(34)</span></a></li>
+                    </ul>
+                    <div class="more"><a href="javascript:;">顯示更多</a></div>
+                  </div>
+
+                  <!--  -->
+                </div>
+                <div class="rightblock">
+                  <div class="resultlist_group">
+                    <!-- 全選 -->
+                    <div class="selectall">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">全部勾選 </label>
+                      </div>
+                      <div class="resultcontent">
+                        <div class="checkedword">已勾選<em>7</em>筆 <button type="button" class="btn">清除</button></div>
+                        <div class="linkblock"><button type="button" class="btn-submit">列印</button>
+                          <div class="link_list"><a href="forward_email.htm">Email</a></div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">1. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">題名：</span><span class="content"><a href="https://www.google.com.tw/webhp?hl=zh-TW&sa=X&ved=0ahUKEwiR7c25pqCGAxWms1YBHdftAJQQPAgJ"><span
+                                  class="yellowbg">臺灣</span>省參議會檔案</a></span>
+                          </li>
+                          <li><span class="title">識別號：</span><span class="content">001</span>
+                          </li>
+                          <li><span class="title">層次：</span><span class="content">全宗</span>
+                          </li>
+                          <li><span class="title">範圍與內容：</span><span class="content fulltext dfkai"><span
+                                class="yellowbg">臺灣</span>省參議會檔案涵蓋時間範圍為民國35年(1946)至40年(1951)，依其檔案性質內容分為：總務、民政、財政、教育、經建、主計、提案、質詢...</span>
+                          </li>
+                          <li><span class="title">時間範圍：：</span><span class="content">民國35年5月1日～民國40年12月11日</span></li>
+                          <li><span class="title">出處：</span><span class="content"><span class="yellowbg">臺灣</span>省參議會</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">2. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">題名：</span><span class="content"><a href="https://www.google.com.tw/webhp?hl=zh-TW&sa=X&ved=0ahUKEwiR7c25pqCGAxWms1YBHdftAJQQPAgJ">總務類總綱</a></span>
+                          </li>
+                          <li><span class="title">識別號：</span><span class="content">001_01</span>
+                          </li>
+                          <li><span class="title">層次：</span><span class="content">系列</span>
+                          </li>
+                          <li><span class="title">範圍與內容：</span><span class="content fulltext dfkai">收錄民國35年（1946）至40年（1951）<span
+                                class="yellowbg">臺灣</span>省參議會承辦與總務類總綱相關業務性質之公文函件，包含總目、組織、文書、考察、新聞、黨務...</span>
+                          </li>
+                          <li><span class="title">時間範圍：：</span><span class="content">民國35年4月28日～民國40年12月11日</span></li>
+                          <li><span class="title">出處：</span><span class="content"><span class="yellowbg">臺灣</span>省參議會</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">3. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <div class="usage readonline"><span>線上閱覽</span></div>
+                        <ul>
+                          <li><span class="title">題名：</span><span class="content"><a href="https://www.google.com.tw/webhp?hl=zh-TW&sa=X&ved=0ahUKEwiR7c25pqCGAxWms1YBHdftAJQQPAgJ">臺南縣翁本柯等請願案因非<span
+                                  class="yellowbg">臺灣</span>省參議會主管遭退還</a></span>
+                          </li>
+                          <li><span class="title">識別號：</span><span class="content">001</span>
+                          </li>
+                          <li><span class="title">層次：</span><span class="content">全宗</span>
+                          </li>
+                          <li><span class="title">範圍與內容：</span><span class="content fulltext dfkai"><span
+                                class="yellowbg">臺灣</span>省參議會檔案涵蓋時間範圍為民國35年(1946)至40年(1951)，依其檔案性質內容分為：總務、民政、財政、教育、經建、主計、提案、質詢...</span>
+                          </li>
+                          <li><span class="title">時間範圍：：</span><span class="content">民國35年5月1日～民國40年12月11日</span></li>
+                          <li><span class="title">出處：</span><span class="content"><span class="yellowbg">臺灣</span>省參議會</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">4. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <div class="usage libraryreading"><span>到館閱覽</span></div>
+                        <ul>
+                          <li><span class="title">題名：</span><span class="content"><a
+                                href="https://www.google.com.tw/webhp?hl=zh-TW&sa=X&ved=0ahUKEwiR7c25pqCGAxWms1YBHdftAJQQPAgJ">臺中縣洪金德請願案因屬個人之事遭退還</a></span>
+                          </li>
+                          <li><span class="title">識別號：</span><span class="content">001_01</span>
+                          </li>
+                          <li><span class="title">層次：</span><span class="content">系列</span>
+                          </li>
+                          <li><span class="title">範圍與內容：</span><span class="content fulltext dfkai">收錄民國35年（1946）至40年（1951）<span
+                                class="yellowbg">臺灣</span>省參議會承辦與總務類總綱相關業務性質之公文函件，包含總目、組織、文書、考察、新聞、黨務...</span>
+                          </li>
+                          <li><span class="title">時間範圍：：</span><span class="content">民國35年4月28日～民國40年12月11日</span></li>
+                          <li><span class="title">出處：</span><span class="content"><span class="yellowbg">臺灣</span>省參議會</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="resultlist">
+                      <div class="project_options">
+                        <label>
+                          <input type="checkbox" name="" value="">4567. </label>
+                      </div>
+                      <div class="resultcontent">
+                        <ul>
+                          <li><span class="title">題名：</span><span class="content"><a href="https://www.google.com.tw/webhp?hl=zh-TW&sa=X&ved=0ahUKEwiR7c25pqCGAxWms1YBHdftAJQQPAgJ"><span
+                                  class="yellowbg">臺灣</span>省參議會檔案</a></span>
+                          </li>
+                          <li><span class="title">識別號：</span><span class="content">001</span>
+                          </li>
+                          <li><span class="title">層次：</span><span class="content">全宗</span>
+                          </li>
+                          <li><span class="title">範圍與內容：</span><span class="content fulltext dfkai"><span
+                                class="yellowbg">臺灣</span>省參議會檔案涵蓋時間範圍為民國35年(1946)至40年(1951)，依其檔案性質內容分為：總務、民政、財政、教育、經建、主計、提案、質詢...</span>
+                          </li>
+                          <li><span class="title">時間範圍：：</span><span class="content">民國35年5月1日～民國40年12月11日</span></li>
+                          <li><span class="title">出處：</span><span class="content"><span class="yellowbg">臺灣</span>省參議會</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+              <!-- 檢索結果end -->
+              <!-- Pagination start-->
+              <div class="pagination">
+                <form action="">
+                  <div class="formInline">
+                    <div class="total">
+                      共<span>308</span>筆資料，
+                      <ul class="page">
+                        <li class="first">
+                          <a href="#" title="第一頁">第一頁 </a>
+                        </li>
+                        <li class="prev">
+                          <a href="#" title="回上一頁">回上一頁 </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="next">
+                          <a href="#" title="下一頁">下一頁 </a>
+                        </li>
+                        <li class="last">
+                          <a href="#" title="最後一頁">最後一頁 </a>
+                        </li>
+                      </ul>
+                      <div class="select_all">
+                        <select name="" id="pet-select" aria-label="跳頁至">
+                          <option value="">跳頁至</option>
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4</option>
+                        </select>
+                        <label for="pet-select">每頁顯示
+                          <select name="" id="pet-select" aria-label="每頁顯示">
+                            <option value="">10</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            <option value="">40</option>
+                          </select></label>
+                        <!-- <label for="pet-select">排序
+                          <select name="" id="pet-select" aria-label="排序">
+                            <option value="">文叢號(遞增)</option>
+                            <option value="">文叢號(遞減)</option>
+                          </select>
+                        </label> -->
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Pagination end-->
+            </div>
+
+          </section>
+          <!-- ap End -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_logo">
+          <img src="images/footer_logo.png" alt="" class="imgResponsive" />
+        </div>
+        <div class="footer_info">
+          <p>
+            地址：115 臺北市南港區研究院路二段128號 人文社會科學館南棟11樓 中研院臺史所檔案館 <br />
+            <span>電話：(02)2652-5181</span> <span>傳真：(02)2652-5184</span>
+          </p>
+          <p class="Copyright">Copyright © 2024 Institute of Taiwan History. All Rights Reserved</p>
+        </div>
+        <!-- <div class="footer_icon">
+                <a target="_blank" href="javascript:;">
+                  <img src="images/basic/accessibility_aa.jpg" alt="通過AA優先等級無障礙網頁檢測,另開新視窗" />
+                </a>
+                <a target="_blank" href="javascript:;">
+                  <img src="images/basic/egov.png" alt="我的e政府,另開新視窗" />
+                </a>
+              </div> -->
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href="javascript:;" class="scrollToTop">回頁首</a>
+  <!-- JQ -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- ease -->
+  <script src="vendor/jquery.easing.min.js"></script>
+  <!-- slick -->
+  <script src="vendor/slick/slick.min.js "></script>
+  <!-- lazyload -->
+  <script src="vendor/lazyload/lazyload.js"></script>
+  <!-- scrolltable -->
+  <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+  <!-- fancybox -->
+  <script src="vendor/fancybox/fancybox.umd.js"></script>
+  <script src="vendor/fancybox/l10n/zh_TW.umd.js"></script>
+  <!-- hyUI -->
+  <script src="js/main.js"></script>
+  <!-- 客製js -->
+  <script src="js/customize.js"></script>
+</body>
+
+</html>
