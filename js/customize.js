@@ -256,12 +256,23 @@ $(function () {
   $('.menu .memberlogin .loginbtn>a').on('click', function () {
     $('.Userlogin_block').stop().slideToggle();
   });
+  // 使用者登入 手機版
+  $('.memberCtrl').on('click', function () {
+    $('.m_memberlogin ').stop().slideToggle();
+  });
 
   // 點外面關閉share
   $(document).on('touchend click', function (e) {
     var container = $('.menu .memberlogin .loginbtn>a');
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $('.Userlogin_block').slideUp();
+    }
+  });
+  // 點外面關閉share 手機版
+  $(document).on('touchend click', function (e) {
+    var container = $('.memberCtrl, .m_memberlogin');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.m_memberlogin').slideUp();
     }
   });
   // 使用者專區

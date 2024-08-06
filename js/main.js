@@ -45,7 +45,7 @@ $(function () {
   /*-----------------------------------*/
   _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
 
-  $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><button type="button" class="memberCtrl">查詢</button>');
+  $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><button type="button" class="memberCtrl">會員</button>');
 
   let menu_status = false;
   let _sidebar = $('.sidebar');
@@ -55,6 +55,7 @@ $(function () {
   let _sidebarCtrl = $('.sidebarCtrl');
   let _overlay = $('.menu_overlay');
   let _mArea = $('.m_area');
+  let _memberlogin = $('.memberlogin');
 
   _sidebarCtrl.append('<span></span><span></span><span></span>');
   // -------------------------------------------- 打開選單 function
@@ -65,6 +66,7 @@ $(function () {
     _body.addClass('noscroll');
     _overlay.fadeIn();
     $('.m_search').hide();
+
     search_mode = false;
   }
   // -------------------------------------------- 縮合選單 function
@@ -176,6 +178,7 @@ $(function () {
   _menu.clone().prependTo(_mArea);
   _megamenu.clone().prependTo(_mArea);
   _search.clone().prependTo(_body).removeClass('search').addClass('m_search');
+  _memberlogin.clone().prependTo(_body).removeClass('memberlogin').addClass('m_memberlogin');
 
   // 切換PC/Mobile 選單
   function checkMenuMode() {
@@ -402,6 +405,7 @@ $(function () {
     resizeTimer = setTimeout(function () {
       // search_mode = true;
       $('.m_search').hide();
+
       checkMenuMode();
     }, 50);
   });
@@ -459,7 +463,8 @@ $(function () {
   _searchCtrl.off().on('click', function (e) {
     searchToggle();
   });
-  // 如果點在外面
+
+  // search 如果點在外面
   $(document.body).on('click', function (e) {
     if (search_mode) {
       searchToggle();
@@ -469,6 +474,7 @@ $(function () {
   $('.m_search ,.searchCtrl').on('click', function (e) {
     e.stopPropagation();
   });
+
   // fixed navbar
   var resizeNavTimer;
   if ($('header .menu').length > 0) {

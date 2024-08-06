@@ -43,6 +43,10 @@
       margin: 0;
       flex: 0 0 auto;
     }
+    .menulogo {
+      flex: 0 0 auto;
+      display: block;
+    }
   }
 
   @include screen('mobile') {
@@ -74,6 +78,9 @@
         box-sizing: border-box;
         letter-spacing: 0.05em;
         transition: 0.5s;
+        @include screen('tablet') {
+          padding: 1em 1em;
+        }
 
         &:focus-visible {
           color: $linkColor;
@@ -205,6 +212,10 @@
     flex: 0 0 auto;
     margin: 0;
     height: 64px;
+    position: relative;
+    @include screen('mobile') {
+      display: none;
+    }
     .loginbtn,
     .memberarea_btn {
       a {
@@ -244,10 +255,15 @@
     //未登入前
     .Userlogin_block {
       position: absolute;
+      left: 0;
       background-color: $color-dark;
       width: 280px;
       padding: 1em;
       display: none;
+      @include screen('tablet') {
+        right: 0;
+        left: auto;
+      }
       &.openblock {
         display: block;
       }
@@ -297,6 +313,11 @@
         }
       }
     }
+  }
+  //menulogo
+  .menulogo {
+    flex: 0 0 auto;
+    display: none;
   }
 }
 

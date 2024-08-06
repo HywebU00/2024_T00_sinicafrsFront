@@ -433,3 +433,99 @@
     }
   }
 }
+// m_memberlogin
+.m_memberlogin {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: auto;
+  padding: 0.8em 0.3em;
+  display: block;
+  height: auto;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 98;
+  background: #333;
+  display: none;
+  margin: 0;
+  .loginbtn,
+  .memberarea_btn {
+    display: none;
+  }
+  // 登入後
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: block !important;
+    li {
+      a {
+        display: block;
+        background-color: $color-dark;
+        font-weight: bold;
+        color: #fff;
+        padding: 0.6em 1.2em;
+        &:hover {
+          background-color: $primaryColor;
+        }
+      }
+    }
+  }
+  //未登入前
+  .Userlogin_block {
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: $color-dark;
+    width: 100%;
+    padding: 1em;
+    display: block !important;
+
+    .flex-form {
+      margin: 0;
+      .form_grp {
+        border-bottom: none;
+        padding: 0;
+        flex-wrap: nowrap;
+        .form_title {
+          flex: 0 0 50px;
+          max-width: 50px;
+          color: #fff;
+        }
+        .form_content {
+          flex: 1 1 auto;
+          flex-basis: calc(100% - 50px);
+          max-width: calc(100% - 50px);
+        }
+      }
+      .btn_grp {
+        input {
+          background-color: $lightColor;
+          border: 1px solid $lightColor;
+
+          min-width: auto;
+        }
+        a {
+          display: inline-block;
+          color: #fff;
+          padding: 0 0.5em;
+          position: relative;
+          &:after {
+            content: '';
+            width: 1px;
+            height: 15px;
+            background-color: #fff;
+            position: absolute;
+            right: 0;
+            top: 5px;
+          }
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

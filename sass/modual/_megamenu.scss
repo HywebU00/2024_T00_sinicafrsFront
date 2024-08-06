@@ -53,13 +53,13 @@
             width: 4px;
             height: 4px;
             display: inline-block;
-            margin-left: .5em;
+            margin-left: 0.5em;
             vertical-align: middle;
             border: 2px solid lighten($color-word, 40);
             transform: rotate(135deg);
             border-bottom: none;
             border-left: none;
-            margin-bottom: .2em;
+            margin-bottom: 0.2em;
           }
         }
       }
@@ -92,7 +92,7 @@
         display: flex;
         overflow: visible;
         width: 100%;
-        background: rgba(0, 0, 0, .8);
+        background: rgba(0, 0, 0, 0.8);
         padding: 15px;
         margin: 0;
         z-index: 999999;
@@ -114,8 +114,8 @@
           padding: 0;
 
           a {
-            padding: .6em 1.2em;
-            color: #FFF;
+            padding: 0.6em 1.2em;
+            color: #fff;
             font-weight: bold;
             box-sizing: border-box;
 
@@ -136,7 +136,7 @@
               padding: 0;
 
               a {
-                padding: .8em 1.2em;
+                padding: 0.8em 1.2em;
                 color: #000;
 
                 &:hover,
@@ -151,9 +151,8 @@
 
                 li {
                   a {
-                    padding: .8em 1.2em .8em 2.2em;
+                    padding: 0.8em 1.2em 0.8em 2.2em;
                   }
-
                 }
               }
             }
@@ -174,7 +173,6 @@
               width: 100%;
 
               > a {
-
                 &:hover,
                 &:focus {
                   background: $primaryColor;
@@ -215,7 +213,7 @@
   }
 
   > .menu_overlay {
-    background: RGBA(0, 0, 0, .5);
+    background: RGBA(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
@@ -232,12 +230,12 @@
 
   .m_area {
     &:before {
-      content: "";
+      content: '';
       width: 280px;
       position: absolute;
       top: 0;
       left: 0;
-      color: #FFF;
+      color: #fff;
       width: 100%;
       height: 3em;
       background: $primaryColor;
@@ -246,14 +244,14 @@
       box-sizing: border-box;
     }
 
-    width:280px;
+    width: 280px;
     padding: 3em 0;
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: $primaryColor;
-    overflow:hidden;
+    overflow: hidden;
     overflow-y: auto;
     z-index: 9999;
     -webkit-overflow-scrolling: touch;
@@ -262,15 +260,15 @@
 
     .megamenu {
       width: 100%;
-      @include box-shadow(0px 0px 4px RGBA(0, 0, 0, .4));
+      @include box-shadow(0px 0px 4px RGBA(0, 0, 0, 0.4));
       margin-bottom: 1em;
-      background: #CCC;
+      background: #ccc;
 
       a {
         display: block;
         color: #222;
         text-decoration: none;
-        transition: .4s ease-out;
+        transition: 0.4s ease-out;
         text-align: left;
       }
 
@@ -282,18 +280,18 @@
           flex-direction: column;
 
           > a {
-            padding: .5em 1em;
+            padding: 0.5em 1em;
             min-height: 2em;
             line-height: 2em;
-            background: #FFF;
-            border-bottom: 1px solid #CCC;
+            background: #fff;
+            border-bottom: 1px solid #ccc;
           }
 
           &.hasChild {
             > a {
-              padding: .5em 1em;
+              padding: 0.5em 1em;
               color: #222;
-              background: #FFF;
+              background: #fff;
               padding-right: 36px;
               position: relative;
 
@@ -309,7 +307,7 @@
                 transform: rotate(45deg);
                 border-top: none;
                 border-left: none;
-                transition: .3s;
+                transition: 0.3s;
               }
             }
           }
@@ -327,7 +325,7 @@
                 display: block;
                 min-height: 1.5em;
                 line-height: 1.5em;
-                padding: .5em 1em .5em 2em !important;
+                padding: 0.5em 1em 0.5em 2em !important;
                 background: #eee;
 
                 &:hover,
@@ -345,13 +343,13 @@
 
               li {
                 a {
-                  background: rgba(0, 0, 0, .15) !important;
-                  padding: .5em 1em .5em 4em !important;
-                  border-bottom: 1px solid #BBB;
+                  background: rgba(0, 0, 0, 0.15) !important;
+                  padding: 0.5em 1em 0.5em 4em !important;
+                  border-bottom: 1px solid #bbb;
 
                   &:hover,
                   &:focus {
-                    background: rgba(0, 0, 0, .25) !important;
+                    background: rgba(0, 0, 0, 0.25) !important;
                   }
 
                   &:after {
@@ -377,7 +375,7 @@
       padding: 0;
       overflow: hidden;
       list-style: none;
-      border: 1px solid rgba(255, 255, 255, .5);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       border-bottom: none;
       border-right: none;
 
@@ -394,14 +392,14 @@
 
         a {
           display: block;
-          height: 3em;
+          // height: 3em;
           line-height: 2em;
-          padding: .5em 1em;
-          font-size: .938em;
-          color: #FFF;
+          padding: 0.5em 1em 0.5em 1.5em;
+          font-size: 0.938em;
+          color: #fff;
           font-weight: bold;
           text-decoration: none;
-          border: 1px solid rgba(255, 255, 255, .5);
+          border: 1px solid rgba(255, 255, 255, 0.5);
           box-sizing: border-box;
 
           &:nth-child(odd) {
@@ -423,15 +421,15 @@
       @include gutter;
 
       a {
-        padding: .6em 1em;
-        background: rgba(0, 0, 0, .4);
+        padding: 0.6em 1em;
+        background: rgba(0, 0, 0, 0.4);
 
         &:after {
           top: 1.3em;
         }
 
         &:before {
-          top: .8em;
+          top: 0.8em;
         }
       }
 
@@ -449,7 +447,7 @@
 
           a {
             border: none;
-            background: rgba(0, 0, 0, .4);
+            background: rgba(0, 0, 0, 0.4);
           }
         }
       }
@@ -476,7 +474,7 @@
       width: 15px;
       height: 15px;
       border: 3px solid #eee;
-      content: "";
+      content: '';
       top: 15px;
       right: 10px;
       transform: rotate(45deg);

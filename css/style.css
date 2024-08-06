@@ -3662,6 +3662,92 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   color: #b49b5b;
 }
 
+.m_memberlogin {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: auto;
+  padding: 0.8em 0.3em;
+  display: block;
+  height: auto;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 98;
+  background: #333;
+  display: none;
+  margin: 0;
+}
+.m_memberlogin .loginbtn,
+.m_memberlogin .memberarea_btn {
+  display: none;
+}
+.m_memberlogin ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: block !important;
+}
+.m_memberlogin ul li a {
+  display: block;
+  background-color: #313131;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.6em 1.2em;
+}
+.m_memberlogin ul li a:hover {
+  background-color: #1e554f;
+}
+.m_memberlogin .Userlogin_block {
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: #313131;
+  width: 100%;
+  padding: 1em;
+  display: block !important;
+}
+.m_memberlogin .Userlogin_block .flex-form {
+  margin: 0;
+}
+.m_memberlogin .Userlogin_block .flex-form .form_grp {
+  border-bottom: none;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+.m_memberlogin .Userlogin_block .flex-form .form_grp .form_title {
+  flex: 0 0 50px;
+  max-width: 50px;
+  color: #fff;
+}
+.m_memberlogin .Userlogin_block .flex-form .form_grp .form_content {
+  flex: 1 1 auto;
+  flex-basis: calc(100% - 50px);
+  max-width: calc(100% - 50px);
+}
+.m_memberlogin .Userlogin_block .flex-form .btn_grp input {
+  background-color: #978045;
+  border: 1px solid #978045;
+  min-width: auto;
+}
+.m_memberlogin .Userlogin_block .flex-form .btn_grp a {
+  display: inline-block;
+  color: #fff;
+  padding: 0 0.5em;
+  position: relative;
+}
+.m_memberlogin .Userlogin_block .flex-form .btn_grp a:after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+.m_memberlogin .Userlogin_block .flex-form .btn_grp a:last-child:after {
+  display: none;
+}
+
 @keyframes showMenu {
   0% {
     left: 20px;
@@ -3704,6 +3790,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   margin: 0;
   flex: 0 0 auto;
 }
+.menu.sticky .menulogo {
+  flex: 0 0 auto;
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
@@ -3732,6 +3822,11 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   box-sizing: border-box;
   letter-spacing: 0.05em;
   transition: 0.5s;
+}
+@media screen and (max-width: 991px) {
+  .menu > ul > li > a {
+    padding: 1em 1em;
+  }
 }
 .menu > ul > li > a:focus-visible {
   color: #d6c18a;
@@ -3815,6 +3910,12 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   flex: 0 0 auto;
   margin: 0;
   height: 64px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .menu .memberlogin {
+    display: none;
+  }
 }
 .menu .memberlogin .loginbtn a,
 .menu .memberlogin .memberarea_btn a {
@@ -3846,10 +3947,17 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .menu .memberlogin .Userlogin_block {
   position: absolute;
+  left: 0;
   background-color: #313131;
   width: 280px;
   padding: 1em;
   display: none;
+}
+@media screen and (max-width: 991px) {
+  .menu .memberlogin .Userlogin_block {
+    right: 0;
+    left: auto;
+  }
 }
 .menu .memberlogin .Userlogin_block.openblock {
   display: block;
@@ -3892,6 +4000,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   top: 5px;
 }
 .menu .memberlogin .Userlogin_block .flex-form .btn_grp a:last-child:after {
+  display: none;
+}
+.menu .menulogo {
+  flex: 0 0 auto;
   display: none;
 }
 
@@ -4205,9 +4317,9 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .sidebar .navigation {
   position: relative;
-  margin: 1em auto;
+  margin: 1em 0;
   text-align: left;
-  width: 90%;
+  width: 100%;
 }
 .sidebar .navigation ul {
   float: none;
@@ -4230,7 +4342,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .sidebar .navigation ul li a {
   display: block;
   line-height: 1.5em;
-  padding: 0.25em 0.5em 0.25em 1.1em;
+  padding: 0.25em 0.5em 0.25em 3em;
   font-size: 0.875em;
   color: #fff;
   font-weight: normal;
@@ -4239,13 +4351,13 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .sidebar .navigation ul li a:before {
   position: absolute;
-  top: 0.75em;
+  top: 1.2em;
   left: 0;
   content: "";
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 2px 0 2px 4px;
+  border-width: 6px 0 6px 6px;
   border-color: transparent transparent transparent #ffffff;
   transition: 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   opacity: 0;
@@ -4291,6 +4403,20 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .sidebar .navigation .font_size {
   display: none;
+}
+.sidebar .navigation .member_name {
+  flex: 0 0 auto;
+  margin-left: 1em;
+  margin-top: 0.3em;
+  display: flex;
+  align-items: center;
+}
+.sidebar .navigation .member_name span {
+  margin-right: 0.5em;
+  color: #fff;
+}
+.sidebar .navigation .member_name button.btn {
+  padding: 0.3em 1em;
 }
 .sidebar button.sidebarClose {
   position: absolute;
@@ -4420,7 +4546,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .megamenu ul li ul li a {
   padding: 0.6em 1.2em;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   box-sizing: border-box;
 }
@@ -4525,7 +4651,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  color: #FFF;
+  color: #fff;
   width: 100%;
   height: 3em;
   background: #1e554f;
@@ -4537,7 +4663,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   width: 100%;
   box-shadow: 0px 0px 4px RGBA(0, 0, 0, 0.4);
   margin-bottom: 1em;
-  background: #CCC;
+  background: #ccc;
 }
 .sidebar .m_area .megamenu a {
   display: block;
@@ -4557,13 +4683,13 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   padding: 0.5em 1em;
   min-height: 2em;
   line-height: 2em;
-  background: #FFF;
-  border-bottom: 1px solid #CCC;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
 }
 .sidebar .m_area .megamenu ul li.hasChild > a {
   padding: 0.5em 1em;
   color: #222;
-  background: #FFF;
+  background: #fff;
   padding-right: 36px;
   position: relative;
 }
@@ -4606,7 +4732,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .sidebar .m_area .megamenu ul li ul li li a {
   background: rgba(0, 0, 0, 0.15) !important;
   padding: 0.5em 1em 0.5em 4em !important;
-  border-bottom: 1px solid #BBB;
+  border-bottom: 1px solid #bbb;
 }
 .sidebar .m_area .megamenu ul li ul li li a:hover, .sidebar .m_area .megamenu ul li ul li li a:focus {
   background: rgba(0, 0, 0, 0.25) !important;
@@ -4641,11 +4767,10 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 }
 .sidebar .navigation ul li a {
   display: block;
-  height: 3em;
   line-height: 2em;
-  padding: 0.5em 1em;
+  padding: 0.5em 1em 0.5em 1.5em;
   font-size: 0.938em;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
   text-decoration: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
