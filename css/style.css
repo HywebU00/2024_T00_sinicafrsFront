@@ -3973,6 +3973,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   flex: 0 0 50px;
   max-width: 50px;
   color: #fff;
+  text-align: center;
 }
 .menu .memberlogin .Userlogin_block .flex-form .form_grp .form_content {
   flex: 1 1 auto;
