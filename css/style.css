@@ -11069,14 +11069,13 @@ h3.title {
   flex-basis: 250px;
   max-width: 250px;
   margin-right: 1em;
-  pointer-events: none;
 }
 @media screen and (max-width: 991px) {
   .filebrowsing_block .leftblock {
     position: absolute;
     left: -330px;
     top: 0;
-    bottom: 0;
+    bottom: auto;
     width: 240px;
     transition: 0.5s;
     z-index: 2;
@@ -11640,14 +11639,13 @@ h3.title {
   flex-basis: 250px;
   max-width: 250px;
   margin-right: 1em;
-  pointer-events: none;
 }
 @media screen and (max-width: 991px) {
   .searchresults_block .leftblock {
     position: absolute;
     left: -330px;
     top: 0;
-    bottom: 0;
+    bottom: auto;
     width: 240px;
     transition: 0.5s;
     z-index: 2;
