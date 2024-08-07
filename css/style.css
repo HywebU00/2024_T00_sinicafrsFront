@@ -11120,6 +11120,9 @@ h3.title {
   background-position: 0 1.2em;
   position: relative;
 }
+.filebrowsing_block .leftblock .filehierarchy_list ul > li a.active {
+  color: #b45f41;
+}
 .filebrowsing_block .leftblock .filehierarchy_list ul > li.hasChild > a {
   background-image: url("../images/icon_close_00.png");
   background-repeat: no-repeat;

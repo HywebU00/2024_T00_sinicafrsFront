@@ -372,7 +372,10 @@ $(function () {
   let _filehierarchylist = $('.filehierarchy_list');
   let _filehierarchylistbtn = $('.filehierarchy_list ul li a');
   _filehierarchylist.find('li').has('ul').addClass('hasChild');
+
   _filehierarchylistbtn.click(function () {
+    _filehierarchylistbtn.removeClass('active');
+    $(this).addClass('active');
     if ($(this).siblings('ul').is(':hidden')) {
       $(this).siblings('ul').stop().slideDown();
       $(this).parent('li').stop().addClass('open');

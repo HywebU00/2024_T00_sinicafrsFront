@@ -162,6 +162,9 @@
             background-repeat: no-repeat;
             background-position: 0 1.2em;
             position: relative;
+            &.active {
+              color: $color-orange;
+            }
           }
           &.hasChild {
             > a {
