@@ -118,6 +118,7 @@
     flex-basis: 250px;
     max-width: 250px;
     margin-right: 1em;
+    pointer-events: none;
     @include screen('tablet') {
       position: absolute;
       left: calc(-250px - 80px);
@@ -726,6 +727,7 @@
     flex-basis: 250px;
     max-width: 250px;
     margin-right: 1em;
+    pointer-events: none;
     @include screen('tablet') {
       position: absolute;
       left: calc(-250px - 80px);
