@@ -355,5 +355,17 @@ $(function () {
   Fancybox.bind('[data-fancybox]', {
     // Custom options for all galleries
   });
-  //
+  //檔案層級資料
+  let _filehierarchylist = $('.filehierarchy_list');
+  let _filehierarchylistbtn = $('.filehierarchy_list ul li a');
+  _filehierarchylist.find('li').has('ul').addClass('hasChild');
+  _filehierarchylistbtn.click(function () {
+    if ($(this).siblings('ul').is(':hidden')) {
+      $(this).siblings('ul').stop().slideDown();
+      $(this).parent('li').stop().addClass('open');
+    } else {
+      $(this).siblings('ul').stop().slideUp();
+      $(this).parent('li').stop().removeClass('open');
+    }
+  });
 });

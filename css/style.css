@@ -11111,26 +11111,30 @@ h3.title {
   padding: 0;
   list-style-type: none;
 }
-.filebrowsing_block .leftblock .filehierarchy_list ul li a {
-  display: block;
-  padding: 0.5em 0.5em 0.5em 1.5em;
-  background-image: url("../images/icon_open_00.png");
-  background-repeat: no-repeat;
-  background-position: 0 0.6em;
-  position: relative;
-}
-.filebrowsing_block .leftblock .filehierarchy_list ul li.close a {
-  background-image: url("../images/icon_close_00.png");
-}
-.filebrowsing_block .leftblock .filehierarchy_list ul li ul {
-  margin: 0 0 0 25px;
-}
-.filebrowsing_block .leftblock .filehierarchy_list ul li ul ul li a {
+.filebrowsing_block .leftblock .filehierarchy_list ul > li a {
   display: block;
   padding: 0.5em 0.5em 0.5em 1.5em;
   background-image: url("../images/icon_open_03.png");
   background-repeat: no-repeat;
   background-position: 0 1.2em;
+  position: relative;
+}
+.filebrowsing_block .leftblock .filehierarchy_list ul > li.hasChild > a {
+  background-image: url("../images/icon_close_00.png");
+  background-repeat: no-repeat;
+  background-position: 0 0.6em;
+}
+.filebrowsing_block .leftblock .filehierarchy_list ul > li.open > a {
+  background-image: url("../images/icon_open_00.png");
+  background-repeat: no-repeat;
+  background-position: 0 0.6em;
+}
+.filebrowsing_block .leftblock .filehierarchy_list ul ul {
+  margin: 0 0 0 25px;
+  display: none;
+}
+.filebrowsing_block .leftblock .filehierarchy_list ul ul li a {
+  display: block;
 }
 .filebrowsing_block .rightblock {
   flex: 1 1 auto;
