@@ -341,7 +341,13 @@ $(function () {
     $('.searchresults_block .leftblock').stop().toggleClass('open');
     $(this).stop().toggleClass('open');
   });
-
+  // 後分類點外面關閉share
+  $(document).on('touchend click', function (e) {
+    var container = $('.searchresults_block .narrowquery_btn, .searchresults_block .leftblock');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.searchresults_block .leftblock').removeClass('open');
+    }
+  });
   // 檔案層級按鈕
   $('.filehierarchy_btn').click(function () {
     $('.filebrowsing_block .leftblock');
@@ -350,6 +356,13 @@ $(function () {
   $('.filehierarchy_btn>a').click(function () {
     $('.filebrowsing_block .leftblock').stop().toggleClass('open');
     $(this).stop().toggleClass('open');
+  });
+  // 檔案層級按鈕點外面關閉share
+  $(document).on('touchend click', function (e) {
+    var container = $('.filebrowsing_block .filehierarchy_btn, .filebrowsing_block .leftblock');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $('.filebrowsing_block .leftblock').removeClass('open');
+    }
   });
   //
   Fancybox.bind('[data-fancybox]', {
