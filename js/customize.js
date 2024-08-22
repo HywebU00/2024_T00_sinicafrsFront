@@ -263,7 +263,7 @@ $(function () {
 
   // 點外面關閉share
   $(document).on('touchend click', function (e) {
-    var container = $('.menu .memberlogin .loginbtn>a');
+    var container = $('.menu .memberlogin  ');
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $('.Userlogin_block').slideUp();
     }
