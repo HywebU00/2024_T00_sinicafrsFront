@@ -5518,8 +5518,8 @@ select::-ms-expand {
   text-align: right;
 }
 .flex-form .form_title {
-  max-width: 170px;
-  flex: 0 0 170px;
+  max-width: 190px;
+  flex: 0 0 190px;
   align-self: flex-start;
   padding: 0.65em 0;
   font-weight: 500;
@@ -5538,8 +5538,8 @@ select::-ms-expand {
   }
 }
 .flex-form .form_title + .form_content[class*=form_col] {
-  flex-basis: calc(100% - 170px);
-  max-width: calc(100% - 170px);
+  flex-basis: calc(100% - 190px);
+  max-width: calc(100% - 190px);
   padding-top: 0;
 }
 @media screen and (max-width: 767px) {
@@ -5550,9 +5550,9 @@ select::-ms-expand {
 }
 .flex-form .form_content {
   display: flex;
-  max-width: calc(100% - 170px);
+  max-width: calc(100% - 190px);
   flex: auto;
-  flex-basis: calc(100% - 170px);
+  flex-basis: calc(100% - 190px);
   position: relative;
   min-height: 1px;
   flex-wrap: wrap;
