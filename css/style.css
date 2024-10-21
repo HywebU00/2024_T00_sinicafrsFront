@@ -11244,7 +11244,7 @@ h3.title {
 }
 .filebrowsing_block .rightblock .file_slider {
   background-color: #f8f8f4;
-  padding: 0.5em 2em 1em;
+  padding: 1em 2em 0.5em;
   margin-bottom: 2em;
   display: block;
 }
@@ -11255,23 +11255,23 @@ h3.title {
   display: block;
 }
 .filebrowsing_block .rightblock .file_slider .file_pic .pic {
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  height: 160px;
+  display: block;
 }
 .filebrowsing_block .rightblock .file_slider .file_pic .pic img {
   display: block;
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
   left: 0;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 160px;
+  max-height: 160px;
   margin: auto;
 }
 .filebrowsing_block .rightblock .file_slider .file_pic .title {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .filebrowsing_block .rightblock .file_slider .slick-next {
   right: 0;
