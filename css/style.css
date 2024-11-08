@@ -9740,7 +9740,7 @@ body.noscroll {
   flex-basis: 1em;
   margin: 3px 0.5em 0 0;
 }
-.searchgroup .filesort_group .filesort_list ul li:first-child {
+.searchgroup .filesort_group .filesort_list ul li.selectall {
   font-weight: bold;
   color: #1e554f;
 }
