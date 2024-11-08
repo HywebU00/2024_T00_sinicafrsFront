@@ -3763,7 +3763,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   clear: both;
   flex: 1 1 100%;
   flex-basis: 100%;
-  background-color: #1e554f;
+  background-color: #b45f41;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3774,7 +3774,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
   left: 0;
   width: 100%;
   z-index: 999;
-  background-color: #1e554f;
+  background-color: #b45f41;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .menu.sticky:after {
@@ -3920,7 +3920,7 @@ div.tag ul li a:hover, div.tag ul li a:focus {
 .menu .memberlogin .loginbtn a,
 .menu .memberlogin .memberarea_btn a {
   display: block;
-  background-color: #143935;
+  background-color: #7c412d;
   background-image: url("../images/member_icon01.png");
   background-position: 1em center;
   background-repeat: no-repeat;
@@ -9578,7 +9578,7 @@ body.noscroll {
 }
 .searchgroup .title span {
   font-size: 1.562rem;
-  color: #b45f41;
+  color: #1e554f;
   position: relative;
   z-index: 2;
   padding: 0 5px;
@@ -9722,6 +9722,10 @@ body.noscroll {
   flex: 0 0 auto;
   flex-basis: 1em;
   margin: 3px 0.5em 0 0;
+}
+.searchgroup .filesort_group .filesort_list ul li:first-child {
+  font-weight: bold;
+  color: #1e554f;
 }
 
 .searchgroup_btn_grp {
@@ -10198,15 +10202,15 @@ body.noscroll {
 }
 
 h2.title {
-  font-size: 2.25rem;
+  font-size: 2rem;
   text-align: center;
   z-index: 2;
-  margin: 0 auto 0.8em;
+  margin: 0 auto 0.5em;
 }
 h2.title span {
   padding: 0 5px;
   font-family: "Noto Serif TC", serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: #b45f41;
   position: relative;
 }
@@ -11112,26 +11116,36 @@ h3.title {
   padding: 0;
   list-style-type: none;
 }
+.filebrowsing_block .leftblock .filehierarchy_list ul > li {
+  display: flex;
+  flex-wrap: wrap;
+}
 .filebrowsing_block .leftblock .filehierarchy_list ul > li a {
   display: block;
-  padding: 0.5em 0.5em 0.5em 1.5em;
-  background-image: url("../images/icon_open_03.png");
-  background-repeat: no-repeat;
-  background-position: 0 1.2em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
   position: relative;
 }
 .filebrowsing_block .leftblock .filehierarchy_list ul > li a.active {
   color: #b45f41;
 }
-.filebrowsing_block .leftblock .filehierarchy_list ul > li.hasChild > a {
+.filebrowsing_block .leftblock .filehierarchy_list ul > li a em {
+  font-style: normal;
+}
+.filebrowsing_block .leftblock .filehierarchy_list ul > li.hasChild > span {
   background-image: url("../images/icon_close_00.png");
   background-repeat: no-repeat;
   background-position: 0 0.6em;
+  background-size: 18px 19px;
+  width: 18px;
+  display: block;
 }
-.filebrowsing_block .leftblock .filehierarchy_list ul > li.open > a {
+.filebrowsing_block .leftblock .filehierarchy_list ul > li.open > span {
   background-image: url("../images/icon_open_00.png");
   background-repeat: no-repeat;
   background-position: 0 0.6em;
+  background-size: 18px 19px;
+  width: 18px;
+  display: block;
 }
 .filebrowsing_block .leftblock .filehierarchy_list ul ul {
   margin: 0 0 0 25px;
@@ -11139,6 +11153,9 @@ h3.title {
 }
 .filebrowsing_block .leftblock .filehierarchy_list ul ul li a {
   display: block;
+}
+.filebrowsing_block .leftblock .filehierarchy_list ul ul li ul {
+  margin: 0 0 0 1em;
 }
 .filebrowsing_block .rightblock {
   flex: 1 1 auto;

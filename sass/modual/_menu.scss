@@ -17,7 +17,7 @@
   clear: both;
   flex: 1 1 100%;
   flex-basis: 100%;
-  background-color: $primaryColor;
+  background-color: $color-orange;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: $primaryColor;
+    background-color: $color-orange;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     &:after {
       position: absolute;
@@ -220,7 +220,7 @@
     .memberarea_btn {
       a {
         display: block;
-        background-color: #143935;
+        background-color: darken($color: $color-orange, $amount: 15);
         background-image: url('../images/member_icon01.png');
         background-position: 1em center;
         background-repeat: no-repeat;

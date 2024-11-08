@@ -200,7 +200,7 @@
     span {
       @extend %mptitle;
       font-size: 1.562rem;
-      color: $color-orange;
+      color: $primaryColor;
       position: relative;
       z-index: 2;
 
@@ -336,13 +336,16 @@
         li {
           display: flex;
           align-items: flex-start;
-
           padding: 0.5em 0;
           border-bottom: 1px solid #b9b3ac;
           input {
             flex: 0 0 auto;
             flex-basis: 1em;
             margin: 3px 0.5em 0 0;
+          }
+          &:first-child {
+            font-weight: bold;
+            color: $primaryColor;
           }
         }
       }
