@@ -107,7 +107,8 @@
       &.active,
       &:hover {
         > a {
-          color: $linkColor;
+          color: #f0daa4;
+          background-color: darken($color: $color-orange, $amount: 10);
           &:after {
             border: 2px solid $aHover;
             border-bottom: none;
@@ -246,7 +247,7 @@
           color: #fff;
           padding: 0.6em 1.2em;
           &:hover {
-            background-color: $primaryColor;
+            background-color: $color-orange;
           }
         }
       }

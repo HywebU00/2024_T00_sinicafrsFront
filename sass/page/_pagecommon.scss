@@ -13,7 +13,7 @@
 .filesort_browse {
   display: flex;
   justify-content: space-between;
-  margin: 1em 0;
+  margin: 0.5em 0 1em;
   @include screen('tablet') {
     flex-wrap: wrap;
   }
@@ -173,7 +173,7 @@
             > span {
               background-image: url('../images/icon_close_00.png');
               background-repeat: no-repeat;
-              background-position: 0 0.6em;
+              background-position: 0 0.65em;
               background-size: 18px 19px;
               width: 18px;
               // height: 19px;
@@ -184,7 +184,7 @@
             > span {
               background-image: url('../images/icon_open_00.png');
               background-repeat: no-repeat;
-              background-position: 0 0.6em;
+              background-position: 0 0.65em;
               background-size: 18px 19px;
               width: 18px;
 
@@ -202,7 +202,7 @@
               display: block;
             }
             ul {
-              margin: 0 0 0 1em;
+              margin: 0 0 0 2.1em;
             }
           }
         }
