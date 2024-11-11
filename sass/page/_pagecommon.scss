@@ -154,20 +154,30 @@
         margin: 0 0 0 1em;
         padding: 0;
         list-style-type: none;
+
         > li {
           display: flex;
           flex-wrap: wrap;
+          span {
+            flex: 0 0 auto;
+            flex-basis: 18px;
+            width: 18px;
+          }
           a {
+            flex: 0 0 auto;
+            flex-basis: calc(100% - 18px);
             display: block;
             padding: 0.5em 0.5em 0.5em 0.5em;
-
             position: relative;
+
             &.active {
               color: $color-orange;
             }
             em {
               font-style: normal;
             }
+          }
+          ul {
           }
           &.hasChild {
             > span {
