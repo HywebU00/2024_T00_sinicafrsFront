@@ -11143,7 +11143,7 @@ h3.title {
   width: 18px;
 }
 .filebrowsing_block .leftblock .filehierarchy_list ul > li a {
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   flex-basis: calc(100% - 18px);
   display: block;
   padding: 0.5em 0.5em 0.5em 0.5em;
