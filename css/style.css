@@ -11232,7 +11232,7 @@ h3.title {
   top: 0.9em;
 }
 .filebrowsing_block .rightblock .organization_list ul li a {
-  display: block;
+  display: inline-block;
   padding: 0.2em 0 0.2em 1.5em;
   color: #1e554f;
 }
