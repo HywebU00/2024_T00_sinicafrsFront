@@ -1455,15 +1455,15 @@ input[type='radio']:checked {
 }
 
 input[type='radio']:focus {
-  border-color: $form-focus;
-  background-color: $form-focus;
-  box-shadow: #fff 0 0 0 3px inset, $form-focus 0 0 0 2px;
+  border-color: $primaryColor;
+  background-color: $primaryColor;
+  box-shadow: #fff 0 0 0 3px inset, $primaryColor 0 0 0 2px;
 }
 
 input[type='checkbox']:focus {
-  border-color: $form-focus;
-  background-color: $form-focus;
-  box-shadow: $form-focus 0 0 0 2px;
+  border-color: $primaryColor;
+  background-color: $primaryColor;
+  box-shadow: $primaryColor 0 0 0 2px;
 }
 
 //---------------------------------------------readonly disable -------//

@@ -6984,15 +6984,15 @@ input[type=radio]:checked {
 }
 
 input[type=radio]:focus {
-  border-color: #978045;
-  background-color: #978045;
-  box-shadow: #fff 0 0 0 3px inset, #978045 0 0 0 2px;
+  border-color: #1e554f;
+  background-color: #1e554f;
+  box-shadow: #fff 0 0 0 3px inset, #1e554f 0 0 0 2px;
 }
 
 input[type=checkbox]:focus {
-  border-color: #978045;
-  background-color: #978045;
-  box-shadow: #978045 0 0 0 2px;
+  border-color: #1e554f;
+  background-color: #1e554f;
+  box-shadow: #1e554f 0 0 0 2px;
 }
 
 .upload_grp {
