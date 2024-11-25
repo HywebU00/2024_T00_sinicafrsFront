@@ -9738,7 +9738,7 @@ body.noscroll {
 .searchgroup .filesort_group .filesort_list ul li input {
   flex: 0 0 auto;
   flex-basis: 1em;
-  margin: 3px 0.5em 0 0;
+  margin: -4px 0.5em 0 0;
 }
 .searchgroup .filesort_group .filesort_list ul li.selectall {
   font-weight: bold;
