@@ -352,12 +352,13 @@
         li {
           display: flex;
           align-items: flex-start;
-          padding: 0.5em 0;
+          padding: 0.5em 0 0.5em 1.5em;
           border-bottom: 1px solid #b9b3ac;
+
           input {
             flex: 0 0 auto;
             flex-basis: 1em;
-            margin: -4px 0.5em 0 0;
+            margin: -4px 0.5em 0 -1.5em;
           }
           &.selectall {
             font-weight: bold;

@@ -9730,13 +9730,13 @@ body.noscroll {
 .searchgroup .filesort_group .filesort_list ul li {
   display: flex;
   align-items: flex-start;
-  padding: 0.5em 0;
+  padding: 0.5em 0 0.5em 1.5em;
   border-bottom: 1px solid #b9b3ac;
 }
 .searchgroup .filesort_group .filesort_list ul li input {
   flex: 0 0 auto;
   flex-basis: 1em;
-  margin: -4px 0.5em 0 0;
+  margin: -4px 0.5em 0 -1.5em;
 }
 .searchgroup .filesort_group .filesort_list ul li.selectall {
   font-weight: bold;
