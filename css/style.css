@@ -6962,12 +6962,16 @@ input[type=radio] {
 }
 
 input[type=checkbox]:checked,
-input[type=checkbox]:focus,
-input[type=radio]:checked,
-input[type=radio]:focus {
+input[type=radio]:checked {
   border-color: #1e554f;
   background-color: #1e554f;
   outline: none;
+}
+
+input[type=checkbox]:focus-visible,
+input[type=radio]:focus-visible {
+  outline: 1px solid #978045;
+  box-shadow: 0 0 0 2px #978045;
 }
 
 input[type=checkbox]:checked {
@@ -6987,12 +6991,6 @@ input[type=radio]:focus {
   border-color: #1e554f;
   background-color: #1e554f;
   box-shadow: #fff 0 0 0 3px inset, #1e554f 0 0 0 2px;
-}
-
-input[type=checkbox]:focus {
-  border-color: #1e554f;
-  background-color: #1e554f;
-  box-shadow: #1e554f 0 0 0 2px;
 }
 
 .upload_grp {
