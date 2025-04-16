@@ -2,22 +2,27 @@
 // 文章標題
 h2.title {
   font-size: 2rem;
-  text-align: center;
   z-index: 2;
   margin: 0 auto 0.5em;
+  display: flex;
+  justify-content: center;
+
   span {
-    padding: 0 5px;
+    padding: 0 2.5em;
     font-family: $fontFamilymptitle;
     letter-spacing: 0.05em;
     color: #b45f41;
     position: relative;
+    @include screen('xs_mobile') {
+      padding: 0 0;
+    }
     &:before {
       content: '';
-      width: 3em;
+      width: 2em;
       height: 2px;
       background-color: #b45f41;
       position: absolute;
-      left: -3.5em;
+      left: 0;
       top: 50%;
       @include screen('xs_mobile') {
         display: none;
@@ -25,11 +30,11 @@ h2.title {
     }
     &:after {
       content: '';
-      width: 3em;
+      width: 2em;
       height: 2px;
       background-color: #b45f41;
       position: absolute;
-      right: -3.5em;
+      right: 0em;
       top: 50%;
       @include screen('xs_mobile') {
         display: none;

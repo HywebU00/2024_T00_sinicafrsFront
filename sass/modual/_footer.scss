@@ -41,6 +41,13 @@ footer {
       &.Copyright {
         color: #fff;
       }
+      a {
+        color: $linkColor;
+        &:hover {
+          color: lighten($color: $linkColor, $amount: 5);
+          text-decoration: underline;
+        }
+      }
     }
   }
   .footer_icon {

@@ -4982,6 +4982,13 @@ footer .footer_info p span {
 footer .footer_info p.Copyright {
   color: #fff;
 }
+footer .footer_info p a {
+  color: #d6c18a;
+}
+footer .footer_info p a:hover {
+  color: #ddcb9d;
+  text-decoration: underline;
+}
 footer .footer_icon {
   flex: 0 1 200px;
 }
@@ -5517,6 +5524,11 @@ select::-ms-expand {
   color: #112f2c;
   font-weight: 500;
   text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .flex-form .form_grp .form_title {
+    text-align: left;
+  }
 }
 .flex-form .form_title {
   max-width: 190px;
@@ -7146,7 +7158,7 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   table {
     width: 100%;
   }
@@ -7197,7 +7209,7 @@ table.table_sprite tr:nth-child(even) {
   background: #f5f5f5;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .table_list {
     background-color: transparent !important;
   }
@@ -7232,10 +7244,15 @@ table.table_sprite tr:nth-child(even) {
     left: 0.5em;
     width: 30%;
     padding-right: 10px;
-    white-space: nowrap;
     text-align: left;
     font-weight: bold;
     color: #000;
+  }
+  .table_list td.aCenter {
+    text-align: left;
+  }
+  .table_list td.aRight {
+    text-align: left;
   }
 }
 
@@ -10218,24 +10235,30 @@ body.noscroll {
 
 h2.title {
   font-size: 2rem;
-  text-align: center;
   z-index: 2;
   margin: 0 auto 0.5em;
+  display: flex;
+  justify-content: center;
 }
 h2.title span {
-  padding: 0 5px;
+  padding: 0 2.5em;
   font-family: "Noto Serif TC", serif;
   letter-spacing: 0.05em;
   color: #b45f41;
   position: relative;
 }
+@media screen and (max-width: 575px) {
+  h2.title span {
+    padding: 0 0;
+  }
+}
 h2.title span:before {
   content: "";
-  width: 3em;
+  width: 2em;
   height: 2px;
   background-color: #b45f41;
   position: absolute;
-  left: -3.5em;
+  left: 0;
   top: 50%;
 }
 @media screen and (max-width: 575px) {
@@ -10245,11 +10268,11 @@ h2.title span:before {
 }
 h2.title span:after {
   content: "";
-  width: 3em;
+  width: 2em;
   height: 2px;
   background-color: #b45f41;
   position: absolute;
-  right: -3.5em;
+  right: 0em;
   top: 50%;
 }
 @media screen and (max-width: 575px) {

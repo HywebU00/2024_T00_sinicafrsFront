@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   max-width: $container-max; //請看_variable.scss
   position: relative;
-  //   outline: 1px solid red;
+  // outline: 1px solid red;
   @include screen('tablet') {
     @include gutter(100px);
   }
